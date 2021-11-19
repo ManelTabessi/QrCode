@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>QRCode</h1>
+
+<p>RIB</p>
+{% for r in rows %}
+    <form id="myForm" action="json/{{r}}" >
+  <label for="cars">Choisir  RIB:</label>
+  <select>
+    {% for r in rows %}
+    
+    <option value="">{{r}}</option>
+     {% endfor %}
+  </select>
+ 
+  <br><br>
+  <input type="submit" onclick="myFunction()" value="Submit">
+</form>
+ {% endfor %}
+<script>
+function myFunction() {
+  document.getElementById("myForm").submit();
+}
+</script>
+
+
+
+</body>
+</html>

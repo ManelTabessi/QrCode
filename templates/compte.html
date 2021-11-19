@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;    
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+
+<div class="myDiv">
+
+  <h2>Madame,Monsieur:</h2>{{rib.first_name}}
+  RIB:<input type="text" id="fname" name="fname" value={{rib}}>
+  <h2>Solde total:</h2>
+  <button onclick="myFunction()">Vérifier les mouvements </button>
+
+
+</div>
+<script type="text/javascript">
+function myFunction(){
+   
+   window.open("/clientqrdec2/C:/fakepath/Client"+document.getElementById("fname").value)
+  }
+
+</script>
+</body>
+</html>

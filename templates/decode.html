@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <style>
+body {
+  background-color: lightblue;
+
+}
+.myDiv {
+  border: 20px outset red;
+  background-color: lightblue;    
+  text-align: center;
+  margin-top: 10px;
+  width: 500px;
+  height: 200px;
+  margin-left: 500px;
+}
+
+.myDiv1 {
+  
+  text-align: center;
+  margin-top: 100px;
+  width: 500px;
+  height: 200px;
+  margin-left: 500px;
+}
+</style>
+
+<div class="myDiv1">
+  RIB :<input type="text" id="fname" name="fname" >
+  
+  <button onclick="myFunction1()">Vérifier identité </button>
+
+
+</div>
+<div class="myDiv">
+  <input type="file" id="myFile" name="filename" style="margin-top: 10px;"><br><br>
+  
+  <button onclick="myFunction()"style="margin-left: ;">Décoder l'image</button>
+
+
+</div>
+
+
+<script>
+   function myFunction1(){
+   
+    //location.replace("clientqrdec/"+document.getElementById("myFile").value)
+
+
+     window.open("rib/"+document.getElementById("fname").value)
+  }
+  function myFunction(){
+   
+    //location.replace("clientqrdec/"+document.getElementById("myFile").value)
+
+
+     window.open("clientqrdec/"+document.getElementById("myFile").value)
+  }
+</script>
+</body>
+</html>

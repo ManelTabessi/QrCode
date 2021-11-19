@@ -1,0 +1,41 @@
+.u-section-1 {
+  background-image: url("images/1828528321-0.jpeg");
+  background-position: 50% 50%;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 835px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 689px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 528px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 {
+    background-position: 29.34% 61.14%;
+    background-size: auto 130%;
+  }
+
+  .u-section-1 .u-sheet-1 {
+    min-height: 479px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 {
+    background-size: auto 150%;
+  }
+
+  .u-section-1 .u-sheet-1 {
+    min-height: 525px;
+  }
+}
